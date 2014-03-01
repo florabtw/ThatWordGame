@@ -12,7 +12,5 @@ alphabet = string.ascii_lowercase
 for i in range(len(alphabet)):
     letter = alphabet[i]
 
-    if letter no in userWord:
+    if letter not in userWord:
         continue
-
-
