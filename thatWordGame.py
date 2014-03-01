@@ -14,3 +14,5 @@ for i in range(len(alphabet)):
 
     if letter not in userWord:
         continue
+
+    letterList = open('words/' + letter + '.csv', 'r').read().split()
