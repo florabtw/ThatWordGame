@@ -6,8 +6,11 @@ userWord = raw_input("Choose a word: ")
 
 print
 
-alphabet = string.ascii_lowercase
+def wordMatch(baseWord, testWord):
+    return False
 
+alphabet = string.ascii_lowercase
+validWords = []
 # in case the length of the alphabet changes
 for i in range(len(alphabet)):
     letter = alphabet[i]
@@ -16,3 +19,8 @@ for i in range(len(alphabet)):
         continue
 
     letterList = open('words/' + letter + '.csv', 'r').read().split()
+    for word in letterList:
+        if wordMatch(userWord, word):
+            validWords.append(word)
+
+print validWords
