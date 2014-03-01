@@ -7,7 +7,16 @@ userWord = raw_input("Choose a word: ")
 print
 
 def wordMatch(baseWord, testWord):
-    return False
+    if len(testWord) > len(baseWord):
+        return False
+
+    for i in range(len(testWord)):
+        letter = testWord[i]
+        if letter in baseWord:
+            baseWord = baseWord.replace(letter, '', 1)
+        else:
+            return False
+    return True
 
 alphabet = string.ascii_lowercase
 validWords = []
