@@ -1,10 +1,13 @@
 #! /usr/bin/python
 
 import string
+import sys
 
-userWord = raw_input("Choose a word: ")
-
-print
+if len(sys.argv) == 2:
+    userWord = sys.argv[1]
+else:
+    userWord = raw_input("Choose a word: ")
+    print
 
 def wordMatch(baseWord, testWord):
     if len(testWord) > len(baseWord):
@@ -32,4 +35,5 @@ for i in range(len(alphabet)):
         if wordMatch(userWord, word):
             validWords.append(word)
 
+print "Words found: %s" % len(validWords)
 print validWords
