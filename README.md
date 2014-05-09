@@ -6,7 +6,7 @@ I have no idea what the name of this game is, but I decided to program it for fu
 To run, simply type:
 
     python thatWordGame.py
-  
+ 
 or:
 
     chmod +x thatWordGame.py
@@ -16,11 +16,11 @@ What does this game actually do? Well, it finds all the words that can be made f
 
 Here is an example:
 
-    $ ./thatWordGame.py 
-    Choose a word: dogecoin
-    
-    ['coin', 'code', 'dog', 'do', 'die', 'end', 'ego', 'good', 'go', 'in', 'ice', 'icon', 'i', 'nod', 'no', 'nice', 'one', 'on', 'once']
-    
-Right now it only contains around 2300 of the most common English words.
+    $ ./thatWordGame.py dogecoin
+    Words found: 108
+    ['cone', 'coni', 'codein', 'congo', 'conge', 'coin', 'coigned', 'conoid', 'cine', 'coned', 'cod', 'cog', 'con', 'condo', 'coding', 'coed', 'codon', 'coigne', 'code', 'coign', 'coden', 'cooed', 'coo', 'cedi', 'cion', 'ceding', 'coined', 'cogon', 'cig', 'cooing', 'coon', 'dice', 'ding', 'dine', 'dino', 'den', 'dingo', 'do', 'de', 'deco', 'die', 'deign', 'deni', 'doing', 'don', 'doc', 'dog', 'doe', 'dogie', 'din', 'dinge', 'doge', 'done', 'dong', 'dig', 'eng', 'eon', 'ego', 'end', 'en', 'ed', 'geodic', 'ged', 'gen', 'goo', 'god', 'goodie', 'gie', 'genic', 'go', 'good', 'goon', 'geoid', 'gid', 'goonie', 'gone', 'gied', 'gien', 'gin', 'iced', 'incog', 'ice', 'icon', 'ion', 'in', 'id', 'noogie', 'nog', 'neg', 'ne', 'noo', 'nod', 'node', 'noodge', 'nodi', 'nide', 'no', 'nice', 'oi', 'once', 'odic', 'odeon', 'on', 'oe', 'od', 'ono', 'one', 'ode']
 
-To increase the number of words, replace the words.txt file in the extras folder with a new CSV with the same name. Then, run the moveWords.py script.
+
+Right now, the word list contains all words from the *Official Tournament and Club  Word List* for Scrabble. This contains a little over 150,000 words.
+
+To increase the number of words, replace the words.csv file in the extras folder with a new CSV with the same name. Then, run the moveWords.py script. The replacement file *must* be in the same format.
