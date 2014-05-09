@@ -11,7 +11,7 @@ for letter in alphabet:
     letterFiles[letter] = open('../words/' + letter + '.csv', 'w')
     files.append(letterFiles[letter])
 
-wordSet = set(open('words.txt', 'r').read().split())
+wordSet = set(open('words.csv', 'r').read().split())
 for word in wordSet:
     word = word.lower()
     letterFiles[word[0]].write(word + '\n')
